@@ -10,5 +10,9 @@ public class App {
         t.setConcluido(false);
 
         System.out.println(t.getDetalhes());
+
+        Tarefa t2 = new Tarefa("Segundo Teste");
+
+        System.out.println(t2.getDetalhes());
     }
 }
