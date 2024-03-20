@@ -23,5 +23,17 @@ public class Compromisso extends AbstractAtividade {
         return "[C] " + this.getDescricao() + " :: "
             + this.getDataInicial().getTime() + " :: "
             + this.getDataFinal().getTime();
-    } 
+    }
+
+    public void setDataInicial(int dia, int mes, int ano) {
+        Calendar c = Calendar.getInstance();
+        c.set(ano, mes, dia);
+        this.dataInicial = c;
+    }
+
+    public void setDataFinal(int dia, int mes, int ano) {
+        Calendar c = Calendar.getInstance();
+        c.set(ano, mes, dia);
+        this.dataFinal = c;
+    }
 }
